@@ -122,7 +122,7 @@
 
   #projects .content {
     justify-content: center;
-    padding: 5rem; }
+    padding: 5rem 0; }
 
   #gallery {
     font-size: 15vw;
