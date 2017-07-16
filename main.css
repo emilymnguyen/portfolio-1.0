@@ -493,7 +493,7 @@ a {
       letter-spacing: .16rem; }
     #footer .container .contact img {
       width: 4rem;
-      margin: .8rem 0 0 0.6vw;
+      margin: .6rem 0 0 0.6vw;
       -o-transition: 0.4s;
       -ms-transition: 0.4s;
       -moz-transition: 0.4s;
@@ -517,7 +517,12 @@ a {
 @media only screen and (max-width: 480px), only screen and (max-device-width: 768px) {
   .two-col {
     column-count: 1;
-    column-gap: 0; } }
+    column-gap: 0; }
+
+  #footer .container p {
+    letter-spacing: .1rem; }
+  #footer .container .contact img {
+    margin-left: .08rem; } }
 @media only screen and (max-device-width: 768px) {
   body {
     font-size: 42px; } }
