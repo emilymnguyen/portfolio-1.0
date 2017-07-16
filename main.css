@@ -1,6 +1,7 @@
 #projects .content {
   text-align: center;
   padding: 50px 0 80px;
+  padding: 2.6em 0 4.6em;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -10,6 +11,7 @@
   text-align: center;
   white-space: nowrap;
   padding: 8px 0 30px 0;
+  padding: .5em 0 1.7em 0;
   cursor: default; }
   #filters .item {
     -o-transition: 0.7s;
@@ -18,21 +20,27 @@
     -webkit-transition: 0.7s;
     Transition: 0.7s;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 1000px;
     height: 24px;
+    height: 1.4em;
     background-color: #F8F8FA;
     margin: 5px;
+    margin: .35em;
     cursor: pointer; }
     #filters .item p {
       font-family: 'Abel', 'Arial', sans-serif;
       text-transform: uppercase;
       font-weight: lighter;
       letter-spacing: 1.27px;
+      letter-spacing: 0.096em;
       color: #B1B6B9;
       font-size: 13px;
+      font-size: .76em;
       padding: 0 20px;
+      padding: 0 1.46em;
       margin: 0;
-      line-height: 26px; }
+      line-height: 26px;
+      line-height: 1.84em; }
   #filters .active {
     background-color: #FB7878;
     cursor: default; }
@@ -133,6 +141,12 @@
       width: 100%;
       height: 80vw;
       max-height: 536px; } }
+@media only screen and (max-device-width: 768px) {
+  #filters .item {
+    -webkit-transition-property: none;
+    -moz-transition-property: none;
+    -o-transition-property: none;
+    transition-property: none; } }
 .bio a:hover {
   opacity: .5; }
 
@@ -344,9 +358,7 @@ body {
   padding: 0 !important;
   -webkit-font-smoothing: antialiased;
   position: relative;
-  min-height: 100vh; }
-
-body {
+  min-height: 100vh;
   font-size: 16px; }
 
 h1,
@@ -358,19 +370,26 @@ h3 {
 
 h1 {
   font-size: 34px;
-  letter-spacing: 3.9px;
+  letter-spacing: 3.86px;
   line-height: 40px;
+  font-size: 1.9 em;
+  letter-spacing: 0.12em;
+  line-height: 1.21em;
   color: #3B4247; }
 
 h2 {
   font-size: 24px;
-  letter-spacing: 2.6px;
-  line-height: 16px;
+  font-size: 1.4em;
+  letter-spacing: .115em;
+  line-height: 30px;
+  line-height: 1.3em;
   color: #B1B6B9; }
 
 h3 {
   font-size: 18px;
+  font-size: 1.07em;
   letter-spacing: 1.38px;
+  letter-spacing: 0.075em;
   color: #B1B6B9; }
 
 body,
@@ -395,10 +414,13 @@ a {
   justify-content: center;
   align-items: center;
   height: 190px;
+  height: 11.15em;
   padding-top: 10px;
+  padding-top: .63em;
   text-align: center; }
   #header img {
-    width: 70px; }
+    width: 70px;
+    width: 4.16em; }
   #header h3 {
     line-height: 0; }
 
@@ -420,29 +442,34 @@ a {
 
 .content {
   padding: 50px 9vw;
+  padding: 2.9em 9vw;
   max-width: 1200px;
   width: 82vw; }
 
 .h-line {
   width: 100vw;
   height: 1px;
+  height: 0.0625em;
   background-color: #D8DBDE;
   padding: 0;
   margin: 0; }
 
 .v-line {
   width: 1px;
+  width: 0.0625em;
   background-color: #D8DBDE;
   padding: 0; }
 
 #resume .content {
   text-align: center;
-  padding: 70px 0; }
+  padding: 70px 0;
+  padding: 4.16em 0; }
 
 .button {
   display: inline-block;
   height: 37px;
-  border-radius: 100px;
+  height: 2.17em;
+  border-radius: 1000px;
   background-color: #FB7878;
   cursor: pointer;
   -webkit-user-select: none;
@@ -455,13 +482,17 @@ a {
     letter-spacing: 1.63px;
     color: #fff;
     font-size: 18px;
+    font-size: 1.05em;
     padding: 0 32px;
+    padding: 0 1.85em;
     margin: 0;
     line-height: 37.5px;
+    line-height: 2.2em;
     white-space: nowrap; }
 
 #push {
-  height: 120px; }
+  height: 120px;
+  height: 7 em; }
 
 #footer {
   display: flex;
@@ -471,6 +502,7 @@ a {
   left: 0;
   right: 0;
   height: 120px;
+  height: 7 em;
   padding: 0 9vw; }
   #footer .container {
     width: 100%;
@@ -484,11 +516,15 @@ a {
       text-transform: uppercase;
       font-weight: lighter;
       font-size: 14px;
+      font-size: 0.85em;
       color: #3B4247;
-      letter-spacing: 1.6px; }
+      letter-spacing: 1.6px;
+      letter-spacing: 0.1em; }
     #footer .container .contact img {
       width: 40px;
+      width: 2.35em;
       margin: 8px 0 0 0.6vw;
+      margin: .5em 0 0 0.6vw;
       -o-transition: 0.4s;
       -ms-transition: 0.4s;
       -moz-transition: 0.4s;
@@ -502,7 +538,8 @@ a {
 
 .two-col {
   column-count: 2;
-  column-gap: 30px; }
+  column-gap: 30px;
+  column-gap: 1.7em; }
 
 .unselectable {
   -webkit-user-select: none;
@@ -515,6 +552,6 @@ a {
     column-gap: 0; } }
 @media only screen and (max-device-width: 768px) {
   body {
-    font-size: 40px; } }
+    font-size: 42px; } }
 
 /*# sourceMappingURL=main.css.map */
