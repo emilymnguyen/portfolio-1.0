@@ -34,7 +34,7 @@
       margin: 0;
       line-height: 2.6rem; }
   #filters .active {
-    background-color: #FB7878;
+    background-color: #FB8578;
     cursor: default; }
     #filters .active p {
       color: #fff; }
@@ -45,7 +45,7 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 88vw;
-  max-width: 1800px;
+  max-width: 1600px;
   color: #fff;
   font-family: 'Abel', 'Arial', sans-serif;
   text-transform: uppercase;
@@ -61,7 +61,7 @@
     margin: 1%;
     width: 31.3%;
     height: 27.2vw;
-    max-height: 56rem;
+    max-height: 50rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,7 +90,7 @@
     #gallery .ourstory img {
       width: 80%; }
   #gallery .portfolio {
-    background-color: #FB7878; }
+    background-color: #FB8578; }
     #gallery .portfolio img {
       width: 50%; }
 
@@ -100,7 +100,7 @@
     line-height: 9.7rem; } }
 @media only screen and (min-device-width: 768px) {
   #filters .item:hover {
-    background-color: #FB7878; }
+    background-color: #FB8578; }
     #filters .item:hover p {
       color: #fff; } }
 @media only screen and (max-width: 768px) {
@@ -240,7 +240,7 @@
   height: auto; }
   #portfolio .mockups .stretch {
     height: auto;
-    background-color: #3B4247; }
+    background-color: #282C2F; }
     #portfolio .mockups .stretch .container {
       height: 100%;
       display: flex;
@@ -248,8 +248,8 @@
       align-items: center; }
       #portfolio .mockups .stretch .container img {
         width: 38.5%;
-        margin: 8rem 2%;
-        max-width: 50rem; }
+        margin: 9rem 2%;
+        max-width: 56.3rem; }
 
 .wrapper {
   overflow: hidden;
@@ -341,7 +341,7 @@
     display: table; } }
 @media only screen and (min-device-width: 768px) {
   #filters .item:hover {
-    background-color: #FB7878; }
+    background-color: #FB8578; }
     #filters .item:hover p {
       color: #fff; } }
 html,
@@ -365,7 +365,7 @@ h1 {
   font-size: 3.4rem;
   letter-spacing: .386rem;
   line-height: 4rem;
-  color: #3B4247; }
+  color: #282C2F; }
 
 h2 {
   font-size: 2.4rem;
@@ -388,7 +388,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #FB7878;
+  color: #FB8578;
   -o-transition: 0.3s;
   -ms-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -448,7 +448,7 @@ a {
   display: inline-block;
   height: 3.7rem;
   border-radius: 1000px;
-  background-color: #FB7878;
+  background-color: #FB8578;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -489,7 +489,7 @@ a {
       text-transform: uppercase;
       font-weight: lighter;
       font-size: 1.4rem;
-      color: #3B4247;
+      color: #282C2F;
       letter-spacing: .16rem;
       line-height: 1.4rem; }
     #footer .container .contact img {
