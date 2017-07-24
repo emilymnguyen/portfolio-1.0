@@ -190,7 +190,7 @@
     display: none; }
   #highlights .narrow {
     display: table; } }
-@media only screen and (min-width: 1480px) {
+@media only screen and (min-width: 1460px) {
   #highlights .spacer {
     width: calc((100vw - 1200px)/2); } }
 .entry table {
@@ -347,9 +347,12 @@
     background-color: #FB8578; }
     #filters .item:hover p {
       color: #fff; } }
-@media only screen and (min-width: 1480px) {
+@media only screen and (min-width: 1450px) {
   .entry .spacer {
-    width: calc((100vw - 1200px)/2); } }
+    width: calc((100vw - 1200px)/2); }
+
+  #portfolio .wide .cell2 {
+    width: calc(1200px * .33); } }
 html,
 body {
   margin: 0 !important;
