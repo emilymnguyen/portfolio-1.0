@@ -337,9 +337,6 @@
     visibility: hidden;
     opacity: 0; }
 
-@media only screen and (min-width: 1450px) {
-  #entry .spacer {
-    width: calc((100vw - 1200px)/2); } }
 @media only screen and (max-width: 600px), only screen and (max-device-width: 768px) {
   .entry .wide {
     display: none; }
@@ -350,6 +347,9 @@
     background-color: #FB8578; }
     #filters .item:hover p {
       color: #fff; } }
+@media only screen and (min-width: 1480px) {
+  .entry .spacer {
+    width: calc((100vw - 1200px)/2); } }
 html,
 body {
   margin: 0 !important;
