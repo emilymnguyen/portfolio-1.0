@@ -4,100 +4,112 @@
  */
 /*
  * Name: arrowOpacity
- * Parameters: swatches - div containing swatches
- * Description: Lower the opacity of the left arrow if swatches are scrolled
- * to the very left and lower the opacity of the right arrow if swatches are
+ * Parameters: 
+        div - div containing swatches
+        arrows - div containing arrows
+ * Description: Lower the opacity of the left arrow if container is scrolled
+ * to the very left and lower the opacity of the right arrow if container is
  * scrolled to the end.
  * Return: None
  */
-function arrowOpacity(swatches) {
-    var scrollLeft = swatches.scrollLeft();
+function arrowOpacity(div, arrows) {
+    var right = arrows.find('.right');
+    var left = arrows.find('.left');
+    var scrollLeft = div.scrollLeft();
     var offset = 15;
     // Check if left end is reached
-    if (scrollLeft < offset) $('.arrows .left').addClass('disable');
-    else $('.arrows .left').removeClass('disable');
+    if (scrollLeft < offset) left.addClass('disable');
+    else left.removeClass('disable');
     // Check if right end is reached
-    var width = swatches.outerWidth();
-    var scrollWidth = swatches[0].scrollWidth;
-    if (scrollWidth - width <= scrollLeft + offset) $('.arrows .right').addClass('disable');
-    else $('.arrows .right').removeClass('disable');
+    var width = div.outerWidth();
+    var scrollWidth = div[0].scrollWidth;
+    if (scrollWidth - width <= scrollLeft + offset) right.addClass('disable');
+    else right.removeClass('disable');
 }
 /*
  * Name: lScroll
- * Parameters: distance - the amount to scroll
- * Description: Scroll the swatches container to the left.
+ * Parameters:
+        div - the div to scroll
+        distance - the amount to scroll
+        arrows - the arrows clicked 
+ * Description: Scroll the container to the left.
  * Return: None
  */
-function lScroll(distance) {
-    var swatches = $('.swatches .stretch');
+function lScroll(div, distance, arrows) {
+    var left = arrows.find('.left');
     // Return if arrow is disabled
-    if ($('.arrows .left').hasClass('disable')) {
+    if (left.hasClass('disable')) {
         return;
     }
     // Calculate offset
-    var scrollLeft = swatches.scrollLeft();
+    var scrollLeft = div.scrollLeft();
     var offset = scrollLeft - distance;
     if (offset < 0) offset = 0;
-    swatches.animate({
+    div.animate({
         scrollLeft: offset
     }, 500);
     return false;
 }
 /*
  * Name: rScroll
- * Parameters: distance - the amount to scroll
- * Description: Scroll the swatches container to the right.
+ * Parameters: 
+        div - the div to scroll
+        distance - the amount to scroll
+        arrows - the arrows clicked
+ * Description: Scroll the container to the right.
  * Return: None
  */
-function rScroll(distance) {
-    var swatches = $('.swatches .stretch');
+function rScroll(div, distance, arrows) {
+    var right = arrows.find('.right');
     // Return if arrow is disabled
-    if ($('.arrows .right').hasClass('disable')) {
+    if (right.hasClass('disable')) {
         return;
     }
     // Calculate offset
-    var scrollLeft = swatches.scrollLeft();
+    var scrollLeft = div.scrollLeft();
     var offset = scrollLeft + distance;
-    var elemWidth = swatches.outerWidth();
-    var scrollWidth = swatches[0].scrollWidth;
+    var elemWidth = div.outerWidth();
+    var scrollWidth = div[0].scrollWidth;
     var width = scrollWidth - elemWidth;
     if (offset >= width) offset = width;
-    swatches.animate({
+    div.animate({
         scrollLeft: offset
     }, 500);
     return false;
 }
-
-function leftScroll(distance) {}
 /*
  * Main function
  */
 var main = function () {
     var swatches = $('.swatches .stretch');
+    var type = $('.type .stretch');
     /* SWATCHES: TOGGLE DEFAULT/ARROW CURSOR */
+    var div = swatches;
+    var container = div.find('.container');
+    var arrows = div.parent().find('.arrows');
     $(window).on('resize', function () {
-        if ($(window).width() < $('.container').width()) {
-            swatches.css('cursor', 'ew-resize');
-            $('.arrows').removeClass('hidden');
+        if ($(window).width() < container.width()) {
+            div.css('cursor', 'ew-resize');
+            arrows.removeClass('hidden');
         }
         else {
-            swatches.css('cursor', 'auto');
-            $('.arrows').addClass('hidden');
+            div.css('cursor', 'auto');
+            arrows.addClass('hidden');
         }
     }).resize();
     /* UPDATE OPACITY OF ARROWS */
-    swatches.on('scroll', function () {
-        arrowOpacity(swatches);
+    div.on('scroll', function () {
+        arrowOpacity(div, arrows);
     }).scroll();
     $(window).on('resize', function () {
-        arrowOpacity(swatches);
+        arrowOpacity(div, arrows);
     }).resize();
     /* LEFT AND RIGHT SCROLL BUTTONS */
     $('.arrows .left').click(function () {
-        lScroll(240);
+        lScroll(div, 240, arrows);
     });
     $('.arrows .right').click(function () {
-        rScroll(240);
+        rScroll(div, 240, arrows);
     });
 }
 $(document).ready(main);

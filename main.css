@@ -200,32 +200,32 @@
     vertical-align: top;
     padding: 5rem 5.5rem;
     border: 0.1rem solid #D8DBDE; }
-.entry .wide .cell1 {
+.entry .wide.summary .cell1 {
   padding-left: 0;
   border-left: none; }
-.entry .wide .cell2 {
+.entry .wide.summary .cell2 {
   padding-right: 0;
   border-right: none; }
-.entry .narrow.summary {
+.entry .narrow {
   display: none; }
-  .entry .narrow.summary td {
-    border-left: none;
-    border-right: none; }
-  .entry .narrow.summary .cell1 {
-    padding-left: 0;
-    padding-right: 0; }
-  .entry .narrow.summary .cell2 {
-    width: calc((100% - 2*9vw)/2);
-    padding-left: 0; }
-  .entry .narrow.summary .cell3 {
-    padding-right: 0; }
-  .entry .narrow.summary .cell2,
-  .entry .narrow.summary .cell3 {
-    padding-top: 3rem;
-    padding-bottom: 3rem; }
-    .entry .narrow.summary .cell2 p,
-    .entry .narrow.summary .cell3 p {
-      margin: 3rem 0; }
+.entry .narrow.summary td {
+  border-left: none;
+  border-right: none; }
+.entry .narrow.summary .cell1 {
+  padding-left: 0;
+  padding-right: 0; }
+.entry .narrow.summary .cell2 {
+  width: calc((100% - 2*9vw)/2);
+  padding-left: 0; }
+.entry .narrow.summary .cell3 {
+  padding-right: 0; }
+.entry .narrow.summary .cell2,
+.entry .narrow.summary .cell3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+  .entry .narrow.summary .cell2 p,
+  .entry .narrow.summary .cell3 p {
+    margin: 3rem 0; }
 .entry .spacer {
   width: 9vw;
   padding: 0;
