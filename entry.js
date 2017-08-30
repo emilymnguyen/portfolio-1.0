@@ -78,15 +78,18 @@ function rScroll(div, distance, arrows) {
     return false;
 }
 /*
- * Main function
+ * Name: scrollFunction
+ * Parameters:
+        div - div to add scrolling function to
+   Description: Add scrolling functions to the given div.
+   Return: None
  */
-var main = function () {
-    var swatches = $('.swatches .stretch');
-    var type = $('.type .stretch');
-    /* SWATCHES: TOGGLE DEFAULT/ARROW CURSOR */
-    var div = swatches;
+function scrollFunction(div) {
     var container = div.find('.container');
     var arrows = div.parent().find('.arrows');
+    var right = arrows.find('.right');
+    var left = arrows.find('.left');
+    // Toggle visibility of arrows
     $(window).on('resize', function () {
         if ($(window).width() < container.width()) {
             div.css('cursor', 'ew-resize');
@@ -105,11 +108,21 @@ var main = function () {
         arrowOpacity(div, arrows);
     }).resize();
     /* LEFT AND RIGHT SCROLL BUTTONS */
-    $('.arrows .left').click(function () {
+    left.click(function () {
         lScroll(div, 240, arrows);
     });
-    $('.arrows .right').click(function () {
+    right.click(function () {
         rScroll(div, 240, arrows);
     });
+}
+/*
+ * Main function
+ */
+var main = function () {
+    var swatches = $('.swatches .stretch');
+    var type = $('.type .stretch');
+    /* SWATCHES: TOGGLE DEFAULT/ARROW CURSOR AND SCROLL*/
+    scrollFunction(swatches);
+    scrollFunction(type);
 }
 $(document).ready(main);

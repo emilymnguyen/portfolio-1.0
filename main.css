@@ -244,8 +244,9 @@
   text-align: center; }
   .entry .wrapper .stretch {
     width: 100vw;
-    background-color: #F8F8FA;
-    text-align: center; }
+    background-color: #F8F8FA; }
+    .entry .wrapper .stretch .container {
+      width: auto; }
 
 #portfolio .wide.summary .cell2 {
   width: 30%; }
@@ -269,7 +270,8 @@
   .swatches .stretch {
     height: 30rem;
     overflow-x: scroll;
-    padding: 0 0 2.5rem 0; }
+    padding: 0 0 2.5rem 0;
+    text-align: center; }
     .swatches .stretch .container {
       margin-top: 8.8rem;
       display: inline-block;
@@ -311,14 +313,14 @@
   .type .stretch {
     height: 38rem;
     overflow-x: scroll;
-    padding: 0 0 2.5rem 0; }
+    padding: 0 0 2.5rem 0;
+    text-align: left; }
     .type .stretch .container {
       margin-top: 7rem;
       display: inline-block;
       position: relative; }
       .type .stretch .container .item {
-        display: inline-block;
-        text-align: left; }
+        display: inline-block; }
         .type .stretch .container .item img {
           margin-left: 9vw;
           margin-right: 9vw;
@@ -331,6 +333,7 @@
   position: absolute;
   width: 20rem;
   margin-left: -10rem;
+  margin-top: -8.5rem;
   cursor: ew-resize;
   -o-transition: 0.7s;
   -ms-transition: 0.7s;
@@ -358,12 +361,6 @@
 .swatches .hidden {
   visibility: hidden;
   opacity: 0; }
-
-.swatches .arrows {
-  margin-top: -8.5rem; }
-
-.type .arrows {
-  margin-top: .4rem; }
 
 @media only screen and (max-width: 600px), only screen and (max-device-width: 768px) {
   .entry .wide {
