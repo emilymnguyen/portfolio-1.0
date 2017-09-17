@@ -232,9 +232,11 @@
   padding-right: 0; }
 .entry .narrow.summary .cell2 {
   width: calc((100% - 2*9vw)/2);
-  padding-left: 0; }
+  padding-left: 0;
+  padding-right: 2.5rem; }
 .entry .narrow.summary .cell3 {
-  padding-right: 0; }
+  padding-right: 0;
+  padding-left: 2.5rem; }
 .entry .narrow.summary .cell2,
 .entry .narrow.summary .cell3 {
   padding-top: 3rem;
@@ -574,19 +576,30 @@ a {
       color: #42474B;
       letter-spacing: .16rem;
       white-space: nowrap; }
-    #footer .container .contact img {
-      width: 4rem;
-      margin: .6rem 0 0 0.6vw;
-      -o-transition: 0.4s;
-      -ms-transition: 0.4s;
-      -moz-transition: 0.4s;
-      -webkit-transition: 0.4s;
-      Transition: 0.4s; }
-      #footer .container .contact img:hover {
-        -webkit-animation-name: spin;
-        -webkit-animation-duration: 1s;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: linear; }
+    #footer .container .contact {
+      margin-left: -.4rem; }
+      #footer .container .contact img {
+        width: 4rem;
+        margin: .6rem 0 0 0.5rem;
+        -o-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -webkit-transition: 0.4s;
+        Transition: 0.4s; }
+        #footer .container .contact img:hover {
+          -webkit-animation-name: spin;
+          -webkit-animation-duration: 1s;
+          -webkit-animation-iteration-count: infinite;
+          -webkit-animation-timing-function: linear; }
+  #footer .narrow {
+    display: none;
+    justify-content: center;
+    flex-direction: column; }
+    #footer .narrow p {
+      display: block;
+      margin-top: 0.9rem; }
+    #footer .narrow .contact {
+      display: block; }
 
 .two-col {
   column-count: 2;
@@ -616,10 +629,15 @@ a {
     column-count: 1;
     column-gap: 0; }
 
-  #footer .container p {
-    letter-spacing: .1rem; }
-  #footer .container .contact img {
-    margin-left: .08rem; } }
+  #push {
+    height: 17rem; }
+
+  #footer {
+    height: 17rem; }
+    #footer .wide {
+      display: none; }
+    #footer .narrow {
+      display: flex; } }
 @media only screen and (min-device-width: 768px) {
   .button:hover {
     background-color: #fff;
@@ -633,7 +651,7 @@ a {
     font-size: 42px; }
 
   #footer .container p {
-    margin-top: 1.3em; }
+    margin-top: 1em; }
 
   .button p {
     line-height: 3.95rem; } }
