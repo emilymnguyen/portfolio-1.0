@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="404px" height="404px" viewBox="0 0 404 404" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 13</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Desktop-HD-Copy-2" transform="translate(-238.000000, -235.000000)">
-            <g id="Group-13" transform="translate(237.500000, 234.829733)">
-                <circle id="Oval-4" fill="#FFFFFF" cx="202.277748" cy="202.378241" r="201.613668"></circle>
-                <path d="M359.497841,328.603444 L359.497841,197.14608 L337.933694,197.14608 L337.933694,298.519133 L279.923085,197.14608 L266.562642,197.14608 L266.562642,356.083711 L288.12679,356.083711 L288.12679,254.989521 L341.513049,348.192288 C305.320781,382.76159 256.278568,403.99191 202.277748,403.99191 C90.9295937,403.99191 0.664079755,313.726396 0.664079755,202.378241 C0.664079755,91.030087 90.9295937,0.764573073 202.277748,0.764573073 C313.625902,0.764573073 403.891416,91.030087 403.891416,202.378241 C403.891416,250.157005 387.271622,294.054008 359.497841,328.603444 Z M235.077661,335.151166 L163.706609,335.151166 L163.706609,287.133802 L221.498213,287.133802 L221.498213,266.201256 L163.706609,266.201256 L163.706609,218.078625 L235.077661,218.078625 L235.077661,197.14608 L142.142462,197.14608 L142.142462,356.083711 L235.077661,356.083711 L235.077661,335.151166 Z" id="Combined-Shape" fill="#FB8578"></path>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 404 404" style="enable-background:new 0 0 404 404;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FB8578;}
+</style>
+<path id="circle" class="st0" d="M359,328.4V197h-21.6v101.4l-58-101.4h-13.4v158.9h21.6V254.8L341,348
+	c-36.2,34.6-85.2,55.8-139.2,55.8C90.4,403.8,0.2,313.6,0.2,202.2S90.4,0.6,201.8,0.6s201.6,90.3,201.6,201.6
+	C403.4,250,386.8,293.9,359,328.4z M234.6,335h-71.4v-48H221V266h-57.8v-48.1h71.4V197h-92.9v158.9h92.9V335z"/>
 </svg>
