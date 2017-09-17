@@ -25,7 +25,18 @@
     <meta charset="UTF-8">
     <meta name="description" content="Emily Nguyen's UI/UX portfolio">
     <meta name="author" content="Emily Nguyen">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Call functions from entry.js -->
+    <script type="text/javascript">
+        var main = function () {
+            var portSwatches = $('#portfolio .swatches .stretch');
+            var portType = $('#portfolio .type .stretch');
+            scrollFunction(portSwatches);
+            scrollFunction(portType);
+        };
+        $(document).ready(main);
+    </script>
+</head>
 
 <body>
     <div id="header">
@@ -51,8 +62,8 @@
                             <br>Sketch, Brackets, Adobe Illustrator</p>
                         <p><span>Skills</span>
                             <br>HTML, CSS, Sass, JavaScript (jQuery)</p>
-                        <p><span>Date</span>
-                            <br>2017</p>
+                        <p><span>Start Date</span>
+                            <br>July 2017</p>
                     </td>
                     <td class="spacer"></td>
                 </tr>
@@ -77,8 +88,8 @@
                     <td class="cell2">
                         <p><span>Skills</span>
                             <br>HTML, CSS, Sass, JavaScript (jQuery)</p>
-                        <p><span>Date</span>
-                            <br>2019</p>
+                        <p><span>Start Date</span>
+                            <br>July 2017</p>
                     </td>
                     <td class="spacer"></td>
                 </tr>

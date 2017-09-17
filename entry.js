@@ -115,14 +115,3 @@ function scrollFunction(div) {
         rScroll(div, 240, arrows);
     });
 }
-/*
- * Main function
- */
-var main = function () {
-    var swatches = $('.swatches .stretch');
-    var type = $('.type .stretch');
-    /* SWATCHES: TOGGLE DEFAULT/ARROW CURSOR AND SCROLL*/
-    scrollFunction(swatches);
-    scrollFunction(type);
-}
-$(document).ready(main);

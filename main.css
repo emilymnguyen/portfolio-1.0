@@ -57,7 +57,31 @@
   font-weight: lighter;
   font-size: 4.7vw;
   line-height: 4.8vw;
-  letter-spacing: 0.2vw; }
+  letter-spacing: 0.2vw;
+  /*
+  .img1 {
+      background-color: #FFE8A7;
+  }
+  .img2 {
+      background-color: #FFA3B4;
+      img {
+          height: 18vw;
+          max-height: 36rem;
+      }
+  }
+  .img3 {
+      background-color: #E6F0F4;
+  }
+  .img4 {
+      background-color: #BEEDFF;
+  }
+  .ourstory {
+      background-color: #8E525E;
+      background-color: #A25666;
+      img {
+          width: 80%;
+      }
+  }*/ }
   #gallery .item {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -78,26 +102,18 @@
       height: 100%;
       top: 0;
       left: 0; }
-  #gallery .img1 {
-    background-color: #FFE8A7; }
-  #gallery .img2 {
-    background-color: #FFA3B4; }
-    #gallery .img2 img {
-      height: 18vw;
-      max-height: 36rem; }
-  #gallery .img3 {
-    background-color: #E6F0F4; }
-  #gallery .img4 {
-    background-color: #BEEDFF; }
-  #gallery .ourstory {
-    background-color: #8E525E;
-    background-color: #A25666; }
-    #gallery .ourstory img {
-      width: 80%; }
   #gallery .portfolio {
     background-color: #FB8578; }
     #gallery .portfolio img {
       width: 50%; }
+  #gallery .hsc {
+    background-color: #FFE792; }
+    #gallery .hsc img {
+      /*
+      width: 80%;
+      margin-left: -0.5rem;
+      margin-top: 26%; */
+      height: 80%; }
 
 @media only screen and (min-width: 2000px) {
   #gallery {
@@ -121,7 +137,7 @@
       width: 47%;
       height: 39.7vw;
       max-height: 100%; } }
-@media only screen and (max-width: 480px), only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 480px) {
   #filters .item p {
     padding: 0 1.3rem; }
 
@@ -265,6 +281,23 @@
         margin: 9rem 2%;
         max-width: 56.3rem; }
 
+#hsc .wide.summary .cell2 {
+  width: 18%; }
+#hsc .mockups {
+  height: auto; }
+  #hsc .mockups .stretch {
+    height: auto;
+    background-color: #42474B; }
+    #hsc .mockups .stretch .container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #hsc .mockups .stretch .container img {
+        width: 38.5%;
+        margin: 9rem 2%;
+        max-width: 56.3rem; }
+
 .swatches {
   height: 30rem; }
   .swatches .stretch {
@@ -375,6 +408,10 @@
 @media only screen and (min-width: 1450px) {
   .entry .spacer {
     width: calc((100vw - 1200px)/2); }
+
+  .type .stretch .container .item img {
+    margin-left: calc((100vw - 1200px)/2);
+    margin-right: calc((100vw - 1200px)/2); }
 
   #portfolio .wide .cell2 {
     width: calc(1200px * .33); } }
