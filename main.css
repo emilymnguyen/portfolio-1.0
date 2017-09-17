@@ -206,9 +206,10 @@
     display: none; }
   #highlights .narrow {
     display: table; } }
-@media only screen and (min-width: 1460px) {
+/* REFERENCES: */
+@media only screen and (min-width: 1345px) {
   #highlights .spacer {
-    width: calc((100vw - 1200px)/2); } }
+    width: calc((100vw - 1100px)/2); } }
 .entry table {
   width: 100vw;
   border-collapse: collapse; }
@@ -267,7 +268,7 @@
       width: auto; }
 
 #portfolio .wide.summary .cell2 {
-  width: 30%; }
+  width: 28%; }
 #portfolio .mockups {
   height: auto; }
   #portfolio .mockups .stretch {
@@ -281,7 +282,7 @@
       #portfolio .mockups .stretch .container img {
         width: 38.5%;
         margin: 9rem 2%;
-        max-width: 56.3rem; }
+        max-width: calc(1100px/2 - 2%); }
 
 #hsc .wide.summary .cell2 {
   width: 18%; }
@@ -407,16 +408,20 @@
     background-color: #FB8578; }
     #filters .item:hover p {
       color: #fff; } }
-@media only screen and (min-width: 1450px) {
+/* REFERENCES */
+@media only screen and (min-width: 1330px) {
   .entry .spacer {
-    width: calc((100vw - 1200px)/2); }
+    width: calc((100vw - 1100px)/2); }
 
   .type .stretch .container .item img {
-    margin-left: calc((100vw - 1200px)/2);
-    margin-right: calc((100vw - 1200px)/2); }
+    margin-left: calc((100vw - 1100px)/2);
+    margin-right: calc((100vw - 1100px)/2); }
 
-  #portfolio .wide .cell2 {
-    width: calc(1200px * .33); } }
+  #portfolio .wide.summary .cell2 {
+    width: calc(1100px * .28); }
+
+  #hsc .wide.summary .cell2 {
+    width: calc(1100px * .18); } }
 html,
 body {
   margin: 0 !important;
@@ -498,7 +503,7 @@ a {
 
 .content {
   padding: 5rem 9vw;
-  max-width: 1200px;
+  max-width: 1100px;
   width: 82vw; }
 
 .h-line {
@@ -563,7 +568,7 @@ a {
   padding: 0 9vw; }
   #footer .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1100px;
     display: flex;
     justify-content: center;
     justify-content: space-between;
@@ -602,6 +607,10 @@ a {
       display: block; }
 
 .two-col {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 4rem;
+  -moz-column-count: 2;
+  -moz-column-gap: 4rem;
   column-count: 2;
   column-gap: 4rem; }
 
